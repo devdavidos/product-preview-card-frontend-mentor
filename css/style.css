@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+/*
+
+  font-family: 'Fraunces', serif;
+  font-family: 'Montserrat', sans-serif;
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--Cream);
+}
+
+:root {
+  --Dark-cyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+}
+
+.container {
+  background-color: var(--White);
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    width: 375px;
+    max-width: 90%;
+    height:max-content;
+    margin: 20px auto;
+    border-radius: 10px;
+  }
+
+  .image-perfume {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+
+}
+
+@media only screen and (min-width: 1000px) {
+  .container {
+    width: 700px;
+    margin: 100px auto;
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .image-perfume {
+    width: 300px;
+    border-radius: 10px 0 0 10px;
+  }
+
+  .product {
+    padding: 10px 20px 0px 20px;
+  }
+
+  .pricing {
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+}
+
+/* SECTION .descripttion-product */
+
+.description-product {
+  padding: 20px;
+}
+
+.type-product-name {
+  color: var(--Dark-grayish-blue);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.title-name-product {
+  font-size: 23pt;
+  font-family: 'Fraunces', sans-serif;
+}
+
+.text-introduction-produtc {
+  color: var(--Dark-grayish-blue);
+  font-size: 11pt;
+  line-height: 1.5;
+}
+
+.type-product-name,
+.text-introduction-produtc,
+.title-name-product {
+  padding-bottom: 15px;
+}
+
+/* SECTION .shopping-product */
+
+.shopping-product {
+  padding: 0 20px 20px 20px;
+  margin: 0 auto;
+
+}
+
+.pricing {
+  display: flex;
+  padding-bottom: 15px;
+}
+
+.price {
+  color: var(--Dark-cyan);
+  font-family: 'Fraunces', sans-serif;
+  font-size: 25pt;
+}
+
+.old-price {
+  color: var(--Dark-grayish-blue);
+  text-decoration: line-through;
+  align-self: center;
+  padding-left: 40px;
+}
+
+.add-cart {
+  color: var(--White);
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  border: 0;
+  background-color: var(--Dark-cyan);
+}
+
+.add-cart:hover {
+  background-color: hsl(158, 51%, 13%);;
+}
+
+.image-add-cart {
+  padding-right: 10px;
+}
+
+/* MADE WITH LOVE, FOR DAVID O.SILVA */
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+}
+
+.attribution a {
+  color: var(--Very-dark-blue);
+  font-weight: bolder;
+}
